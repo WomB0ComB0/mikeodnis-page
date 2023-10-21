@@ -1,6 +1,15 @@
+<head>
+    <meta charset="utf-8">
+    <title>WomB0ComB0</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="WomB0ComB0's GitHub Profile">
+    <meta name="author" content="WomB0ComB0">
+</head> 
+<html lang="en">
+</html>
 <div style="margin:0;padding:0;"align="center" dir="auto">
     <a target="_blank" rel="noopener norefferer nofollow">
-        <img src=".github/assets//Mikes%20Purple%20bkg%20Complete%20I%20guess.png" align="center" style="width:100%; max-width:100%;">
+        <img src="assets/Mikes%20Purple%20bkg%20Complete%20I%20guess.png" align="center" style="width:100%; max-width:100%;">
     </a>
 </div>
 <div style="margin: 5px;">
@@ -34,7 +43,7 @@
     <div align="center" dir="auto" style="margin:0;padding:0;">
     <hr>
         <img src="https://streak-stats.demolab.com?user=WomB0ComB0&theme=deuteranopia-friendly-theme&border_radius=25&mode=weekly&ring=8432e1&background=281847&border=9056f6&fire=cd36fc&dates=c159ff&sideNums=cd36fc&currStreakNum=c159ff&stroke=8432df&sideLabels=c034ed&currStreakLabel=c034ed" href="https://git.io/streak-stats" alt="Git hub Streaks"/>
-        <img src=".github/assets/giphy (2).gif" alt="Animated GiF" height="190" width="30%" style="border-radius:25px;"/>
+        <img src="assets/giphy (2).gif" alt="Animated GiF" height="190" width="30%" style="border-radius:25px;"/>
     <hr>
     </div>
 </div>
