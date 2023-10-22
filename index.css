@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+}
+
+.item {
+  flex: 1 200px;
+  order: 2;
+}
+
+:root {
+  --color1: rgb(236, 27, 117);
+  --color2: rgb(239, 65, 140);
+  --color3: rgb(242, 103, 163);
+  --color4: rgb(245, 141, 186);
+  --color5: rgb(248, 178, 208);
+  --color6: rgb(251, 216, 231);
+  --color7: rgb(254, 254, 254);
+}
+
+/* Pink Light scheme (Default) */
+[data-theme=light],
+:root:not([data-theme=dark]) {
+  --primary: var(--color1);
+  --primary-hover: var(--color2);
+  --primary-focus: var(--color3);
+  --primary-inverse: var(--color7);
+}
+
+/* Pink Dark scheme (Auto) */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: var(--color4);
+    --primary-hover: var(--color5);
+    --primary-focus: var(--color6);
+    --primary-inverse: var(--color7);
+  }
+}
+/* Pink Dark scheme (Forced) */
+[data-theme=dark] {
+  --primary: var(--color4);
+  --primary-hover: var(--color5);
+  --primary-focus: var(--color6);
+  --primary-inverse: var(--color7);
+}
+
+/* Pink (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}/*# sourceMappingURL=index.css.map */
