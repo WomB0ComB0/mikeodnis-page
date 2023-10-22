@@ -43,7 +43,7 @@
   <link rel="stylesheet" href="./src/styles/css/pico.min.css">
   <link rel="stylesheet" href="./src/styles/index.css">
   <link rel="stylesheet" href="./src/styles/reset.css">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
 
 <body style=" width: 100dvw; overflow-x: hidden;">
@@ -53,7 +53,7 @@
         <a href="/" rel="noopener norefferer nofollow" target="_self"
           style="display: flex;flex-direction: row;align-items: center;gap: 15px;">
           <img loading="lazy" src="public/PWA/svgs/MyLogo.svg" alt="Logo" style="width:50px; max-width:100%;">
-          <span style="font-weight: 600;font-size:larger;">
+          <span style="font-weight: 600;font-size:larger; color: var(--color3)">
             Mike Odnis
           </span>
         </a>
@@ -63,7 +63,7 @@
       <li>
         <a href="https://www.mikeodnis.com" rel="noopener nofollow" target="_blank">
           <i class="fa-solid fa-globe" style="color: #7509b7;"></i>
-          <span style="font-weight: 600;font-size:larger;">
+          <span style="font-weight: 600;font-size:larger; color: var(--color3)">
             Portfolio
           </span>
         </a>
@@ -71,7 +71,7 @@
       <li>
         <a href="https://www.main-link-stream.vercel.app" rel="noopener norefferer nofollow" target="_self">
           <i class="fa-solid fa-link" style="color: #7509b7;"></i>
-          <span style="font-weight: 600;font-size:larger;">
+          <span style="font-weight: 600;font-size:larger; color: var(--color3)">
             Links
           </span>
         </a>
@@ -80,7 +80,7 @@
         <a href="https://docs.google.com/document/d/1ItV1Ugn87fBE8RvKji7_a5pZ8zbA59eZGVojnCoGiQA/edit?usp=sharing"
           rel="noopener norefferer nofollow" target="_self">
           <i class="fa-solid fa-book" style="color: #7509b7;"></i>
-          <span style="font-weight: 600;font-size:larger;">
+          <span style="font-weight: 600;font-size:larger; color: var(--color3)">
             Resume
           </span>
         </a>
@@ -105,14 +105,12 @@
     </section>
     <section style="display: flex;justify-content: center; margin-bottom: 25px;">
       <picture style="padding-inline:20px;">
-        <a href="https://github.com/ryo-ma/github-profile-trophy">
-          <img
-            src="https://github-profile-trophy.vercel.app/?username=WomB0ComB0&theme=radical&margin-w=15&no-frame=true&title=Commits,Repositories,PR,Issues&row=2&column=4&no-bg=true&"
-            height="500px" width="700px" alt="" />
-        </a>
+        <img
+          src="https://github-profile-trophy.vercel.app/?username=WomB0ComB0&theme=radical&margin-w=15&no-frame=true&title=Commits,Repositories,PR,Issues&row=2&column=4&no-bg=true&"
+          height="500px" width="700px" alt="" />
       </picture>
     </section>
-    <section align="center" dir="auto"
+    <!-- <section align="center" dir="auto"
       style="background-color: #28184770; border-radius: 25px; padding: 3rem; margin-inline: 3rem; height: fit-content; border: 1px solid #9056f6;width: fit-content;margin-inline:auto;">
       <h2 style="color: #9436fc; font-size: 2em; font-weight: 600; margin-bottom: 25px;">Repositories/Projects</h2>
       <div class="card-container">
@@ -181,15 +179,13 @@
           </a>
         </article>
       </div>
-    </section>
+    </section> -->
     <section align="center" dir="auto"
       style="padding: 3rem;display: flex; flex-direction: column;gap: 25px;justify-content: center;align-items: center; width: fit-content;align-items: center;margin-inline: auto; margin-bottom:0;">
       <picture>
-        <a rel="noopener norefferer nofollow" href="https://github.com/WomB0ComB0/github-readme-activity-graph">
-          <img loading="lazy"
-            src="https://github-readme-activity-graph.vercel.app/graph?username=WomB0ComB0&theme=dracula&bg_color=281847&color=9436fc&line=cd36fc&point=ff00ff&area=true&hide_border=true&custom_title=Contribution"
-            alt="Contribution Graph, if you're reading this" style="width:100%;max-width:100%; border-radius: 25px;">
-        </a>
+        <img loading="lazy"
+          src="https://github-readme-activity-graph.vercel.app/graph?username=WomB0ComB0&theme=dracula&bg_color=281847&color=9436fc&line=cd36fc&point=ff00ff&area=true&hide_border=true&custom_title=Contribution"
+          alt="Contribution Graph, if you're reading this" style="width:100%;max-width:100%; border-radius: 25px;">
       </picture>
       <section style="display: flex;
     justify-content: center;
@@ -212,7 +208,7 @@
       </section>
     </section>
   </main>
-  <footer style="background-color: #7509b730;backdrop-filter: blur(5px);">
+  <footer style="background-color: #7509b730;backdrop-filter: blur(5px); padding-left: 25px;">
     <div>
       <p style="color:var(--color3);">Made with
         <span>&nbsp;🩷&nbsp;</span>
@@ -228,6 +224,16 @@
       </p>
     </div>
   </footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/service-worker.js')
+        .then((registration) => {
+          console.log('scope is: ', registration.scope)
+        })
+        .catch((error) => console.error('Service Worker registration failed:', error));
+    }
+  </script>
   <!-- My font awesome kit -->
   <script src="https://kit.fontawesome.com/a93e9f2175.js" crossorigin="anonymous"></script>
   <!-- Footer script -->
