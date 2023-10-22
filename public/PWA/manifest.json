@@ -1,7 +1,7 @@
 {
     "name": "Mike Odnis | Github stats",
-    "scope": "/",
-    "start_url": "/",
+    "scope": "/mikeodnis-page/",
+    "start_url": "/mikeodnis-page/",
     "lang": "en-US",
     "short_name": "MO-Github",
     "description": "This is a Progressive Web App (PWA) that displays my Github stats.",
