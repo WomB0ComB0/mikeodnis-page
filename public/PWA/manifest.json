@@ -8,7 +8,7 @@
     "theme_color": "#d6b3f0",
     "background_color": "#7209b7",
     "dir": "ltr",
-    "orientation": "portrait-primary",
+    "orientation": "portrait-primary",  
     "display_override": ["minimal-ui", "browser", "fullscreen"],
     "display": "standalone",
     "icons": [
